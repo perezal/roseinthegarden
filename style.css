@@ -1,0 +1,107 @@
+html {
+padding-top: 75px;
+opacity: 0.9;
+background: url("rosegarden.jpg") no-repeat center fixed;
+background-size: cover;
+}
+
+body {
+font-family: "Quicksand";
+}
+
+/* header */
+
+.header {
+position: fixed;
+z-index: 1000;
+font-family: "Raleway";
+}
+
+.navbar {
+background-color: #ffffff;
+width: 100%;
+padding: 15px;
+border-bottom: 1px ridge #000000;
+}
+
+/*main-menu*/
+
+.menu {
+float: right;
+}
+
+.menu li {
+margin-left: 10px;
+margin-right: 10px;
+}
+
+.menu li a {
+color: #65000B;
+}
+
+.menu li a:hover {
+color: #ffffff;
+background-color: #65000B;
+}
+
+/*dropdown-menu*/
+
+.dropdown-toggle {
+position: fixed;
+top: 0;
+left: 0;
+padding: 15px;
+display: none;
+background-color: #000000;
+}
+
+.dropdown-toggle:hover {
+background-color: #ff6c00;
+}
+
+.dropdown-menu {
+left: 20px;
+background-color: #ffffff;
+}
+
+.dropdown-menu li a {
+color: #000000;
+}
+
+.dropdown-menu li a:hover {
+color: #ffffff;
+background-color: #ff6c00;
+}
+
+
+
+/*content text*/
+
+.content {
+top: 200px;
+position: fixed;
+}
+
+.content h1 {
+color: #ffffff;
+font-size: 80px;
+font-weight: 500;
+text-shadow: 2px 2px #000000;
+}
+
+.garden-word h1 {
+color: #ffffff;
+}
+
+.footer h1 {
+font-size: 80px;
+font-weight: 500;
+padding: 0px;
+margin: 0;
+}
+
+
+.navbar-fixed-bottom {
+min-height: 100px;
+position: fixed;
+}
