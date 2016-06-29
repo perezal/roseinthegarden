@@ -2,60 +2,36 @@
 
 var main = function() {
 
-// 	$('.content').hover(function() {
+// 	if (window.innerWidth >= 900) {
 // 	
-// 		$(this).hide(200);
-// 	
-// 	},function(){
-// 		$(this).show(200);
-// 	});
+// 			$('.menu').show();
+// 			$('.logo-icon').show();	
+// 			$('.navbar').removeClass('center');				
+// 			$('.dropdown-menu').hide();
+// 			$('.dropdown-toggle').hide();
+// 		} else {
+// 			$('.menu').hide();
+// 			$('.logo-icon').hide();	
+// 			$('.navbar').addClass('center');	
+// 			$('.dropdown-toggle').show();
+// 		};
 
-	if (window.innerWidth >= 1100) {
-			$('.navbar').show(200);			
-			$('.dropdown-menu').hide(200);
-			$('.dropdown-toggle').hide(200);
-		} else {
-			$('.navbar').hide(200);
-			$('.dropdown-toggle').show(200);
-		};
-
-	$(window).resize(function() {
-		
-		if (window.innerWidth >= 1100) {
-			$('.navbar').show(200);			
-			$('.dropdown-menu').hide(200);
-			$('.dropdown-toggle').hide(200);
-		} else {
-			$('.navbar').hide(200);
-			$('.dropdown-toggle').show(200);
-		}
-	});
-	
-	// $('.dropdown-toggle dropdown-menu').hover(
-// 		function() {
-// 		$('.dropdown-menu').show(400);
-// 		},
-// 		function() {
-// 		$('.dropdown-menu').hide(400);
-// 		}
-// 	);
-// 	
-// 	$('.dropdown-menu').hover(function() {
-// 	
-// 		$('.dropdown-menu').show(400);
-// 	});
-// 	
-// 	$(document).click(function() {
-// 	
-// 		$('.dropdown-menu').hide(400);
+// 	$(window).resize(function() {
 // 		
+// 		if (window.innerWidth >= 900) {
+// 			$('.menu').show();	
+// 			$('.logo-icon').show();
+// 			$('.navbar').removeClass('center');			
+// 			$('.dropdown-menu').hide();
+// 			$('.dropdown-toggle').hide();
+// 		} else {
+// 			$('.menu').hide();
+// 			$('.logo-icon').hide();
+// 			$('.navbar').addClass('center');	
+// 			$('.dropdown-toggle').show();
+// 		}
 // 	});
 
-	
-// 	$('.menu li').hover(
-// 		function() {
-// 			$(this).toggleClass('hover');
-// 	});
 		
 };
 
@@ -64,9 +40,9 @@ $(document).ready(main);
 
 
 /*var secondary = function() {
-	var currentItem = $('.nav-items li').first().animate({right: '0'}, 2000);
+	var currentItem = $('.nav-items li').first().animate({right: '0'}, 0);
 	for (x in $('.nav-items li')) {
-		currentItem.animate({right: '0'}, 2000).delay(1000);
+		currentItem.animate({right: '0'}, 0).delay(1000);
 		currentItem = currentItem.next();
 	};
 };

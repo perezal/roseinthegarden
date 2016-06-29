@@ -1,13 +1,17 @@
-html {
+body {
 padding-top: 75px;
 opacity: 0.9;
 background: url("rosegarden.jpg") no-repeat center fixed;
 background-size: cover;
-}
-
-body {
 font-family: "Quicksand";
 }
+
+@media only screen and (max-width: 768px) {
+	.navbar {
+		display: none;
+	}
+}
+
 
 /* header */
 
