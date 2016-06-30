@@ -2,7 +2,6 @@
 
 var main = function() {
 
-
 // 	if (window.innerWidth >= 900) {
 // 	
 // 			$('.menu').show();
