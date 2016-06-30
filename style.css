@@ -90,20 +90,20 @@ background-color: #ff6c00;
 /*content text*/
 
 .content {
-top: 100px;
+top: 75px;
 position: fixed;
 opacity: 0.9;
 }
 
 .content h1 {
 color: #ffffff;
-font-size: 80px;
+font-size: 70px;
 font-weight: 500;
 text-shadow: 2px 2px #000000;
 }
 
 .footer h1 {
-font-size: 80px;
+font-size: 70px;
 font-weight: 500;
 padding: 0px;
 margin: 0;
@@ -117,5 +117,9 @@ margin: 0;
 	
 	.content {
 		top: 150px;
+	}
+	
+	.content h1 {
+		font-size: 80px;
 	}
 }
