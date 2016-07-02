@@ -1,109 +1,68 @@
 html {
+
 }
 
 body {
 font-family: "Quicksand";
 width: 100%;
-height: 1000px;
+
 }
 
-/* header */
-
-.rosegarden {
-background: url("rosegarden.jpg") no-repeat center fixed;
-background-size: cover;
-top: 0px;
-left: 0px;
-width: 100%;
-height: 1000px;
-z-index: -5000;
-position: local;
+.box {
+height: 1536px;
 }
 
-.background2 {
-height: 1000px;
-background: url("DF.jpg") no-repeat center fixed;
+/* 
+.background {
+background-image: url("rosegarden3.jpg");
+background-repeat: no-repeat;
+background-position: bottom center;
+background-attachment: fixed;
 background-size: cover;
-position: local;
-padding: 0px;
-margin: auto;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+
+height: 100%;
+}
+ */
+
+/* 
+.background {
+background: url("background4.jpg") no-repeat center fixed;
+background-size: cover;
 z-index: 1000;
 }
+ */
+
+.background {
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+height: 100%;
+}
+
+#slide1 {
+background-image: url("background1.jpg");
+background-position: bottom center;
+}
+
+#slide2 {
+background-image: url("background2.jpg");
+background-position: center center;
+}
+
 
 .text h1 {
 z-index: 1000;
-}
-
-.header {
-position: fixed;
-z-index: 1000;
-font-family: "Raleway";
-}
-
-.navbar {
-display: none;
-background-color: #ffffff;
-width: 100%;
-padding: 15px;
-}
-
-.navbar-fixed-top {
-border-bottom: 1px ridge #000000;
-}
-
-/*main-menu*/
-
-.menu {
-float: right;
-}
-
-.menu li {
-margin-left: 10px;
-margin-right: 10px;
-}
-
-.menu li a {
-color: #65000B;
-}
-
-.menu li a:hover {
-color: #ffffff;
-background-color: #65000B;
-}
-
-/*dropdown-menu*/
-
-.dropdown-toggle {
-position: fixed;
-top: 0;
-left: 0;
-padding: 15px;
-display: none;
-background-color: #000000;
-}
-
-.dropdown-toggle:hover {
-background-color: #ff6c00;
-}
-
-.dropdown-menu {
-left: 20px;
-background-color: #ffffff;
-}
-
-.dropdown-menu li a {
-color: #000000;
-}
-
-.dropdown-menu li a:hover {
-color: #ffffff;
-background-color: #ff6c00;
+text-align: center;
 }
 
 /*content text*/
 
 .content {
-top: 75px;
+top: 150px;
 position: fixed;
 opacity: 0.9;
 z-index: 1;
@@ -111,22 +70,28 @@ z-index: 1;
 
 .content h1 {
 color: #ffffff;
-font-size: 70px;
+font-size: 80px;
 font-weight: 500;
 text-shadow: 2px 2px #000000;
 }
 
 
-@media only screen and (min-width: 768px) {
-	.navbar {
-		display: inline;
+@media only screen and (max-width: 768px) {
+
+	.box {
+		height: 500px;
+
+		}
+		
+	.background {
+	background-attachment: scroll;
 	}
 	
 	.content {
-		top: 150px;
+		top: 75px;
 	}
 	
 	.content h1 {
-		font-size: 80px;
+		font-size: 70px;
 	}
 }

@@ -2,6 +2,14 @@
 
 var main = function() {
 
+var screenHeight = screen.height - 100 + "px";
+
+jQuery('.box').css('height', screenHeight);
+
+var screenWidth = screen.width + "px";
+
+document.getElementById('text').innerHTML = screenHeight + " x " + screenWidth;
+
 // 	if (window.innerWidth >= 900) {
 // 	
 // 			$('.menu').show();
